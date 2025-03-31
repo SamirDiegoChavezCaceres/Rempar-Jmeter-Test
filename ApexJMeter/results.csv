@@ -1,0 +1,99 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1743139030951,1962,Login (page 101),200,OK,User Group 1-1,text,true,,448548,9243,1,1,https://apex.oracle.com/pls/apex/f?p=246678:9999::,996,0,169
+1743139030951,996,Login (page 101)-0,200,OK,User Group 1-1,text,true,,4091,545,1,1,https://apex.oracle.com/pls/apex/f?p=246678:9999::,996,0,169
+1743139031948,462,Login (page 101)-1,200,OK,User Group 1-1,text,true,,66865,569,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Core.min.css?v=24.2.2,437,0,363
+1743139031948,426,Login (page 101)-2,200,OK,User Group 1-1,text,true,,5667,579,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Theme-Standard.min.css?v=24.2.2,426,0,366
+1743139031948,425,Login (page 101)-3,200,OK,User Group 1-1,text,true,,14053,591,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/font-apex/2.4/css/font-apex.min.css?v=24.2.2,425,0,364
+1743139031948,489,Login (page 101)-4,200,OK,User Group 1-1,text,true,,75165,583,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Core.min.css?v=24.2.2,440,0,366
+1743139031948,424,Login (page 101)-5,200,OK,User Group 1-1,text,true,,1466,592,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oracle-fonts/oraclesans-apex.min.css?v=24.2.2,424,0,364
+1743139031948,430,Login (page 101)-6,200,OK,User Group 1-1,text,true,,27790,586,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood.min.css?v=24.2.2,427,0,361
+1743139032372,156,Login (page 101)-7,200,OK,User Group 1-1,text,true,,1063,592,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood-Theme.min.css?v=24.2.2,156,0,99
+1743139032374,152,Login (page 101)-8,200,OK,User Group 1-1,bin,true,,877,669,1,1,https://apex.oracle.com/pls/apex/r/schavezca/246678/files/static/v6/icons/app-icon-32.png,152,0,100
+1743139032374,162,Login (page 101)-9,200,OK,User Group 1-1,bin,true,,10525,670,1,1,https://apex.oracle.com/pls/apex/r/schavezca/246678/files/static/v6/icons/app-icon-512.png,162,0,105
+1743139032379,278,Login (page 101)-10,200,OK,User Group 1-1,text,true,,215663,588,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/desktop_all.min.js?v=24.2.2,174,0,106
+1743139032411,502,Login (page 101)-11,200,OK,User Group 1-1,text,true,,12919,819,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_messages?p_app_id=246678&p_lang=en&p_version=24.2.2-15614581167317&p_nls_settings=eyJudW1lcmljQ2hhcmFjdGVycyI6Ii4sIiwiY3VycmVuY3kiOiIkIiwiaXNvQ3VycmVuY3kiOiJBTUVSSUNBIiwiZHVhbEN1cnJlbmN5IjoiJCJ9,502,0,108
+1743139032438,448,Login (page 101)-12,200,OK,User Group 1-1,text,true,,732,680,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_dialogs?p_app_id=246678&p_version=24.2.2-15614581167317,448,0,111
+1743139032526,160,Login (page 101)-13,200,OK,User Group 1-1,text,true,,2750,596,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyWidget.min.js?v=24.2.2,160,0,100
+1743139032528,60,Login (page 101)-14,200,OK,User Group 1-1,text,true,,8922,584,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/js/theme42.min.js?v=24.2.2,60,0,0
+1743139035351,604,Login action (page 101),200,OK,User Group 1-1,text,true,,577,1275,1,1,https://apex.oracle.com/pls/apex/wwv_flow.accept,604,0,0
+1743139037395,555,Home page (page 1),200,OK,User Group 1-1,text,true,,4591,660,1,1,https://apex.oracle.com/pls/apex/f?p=246678%3A1%3A113534112105566%3A%3A%3A%3A%3A,555,0,0
+1743139037395,555,Home page (page 1)-0,200,OK,User Group 1-1,text,true,,4591,660,1,1,https://apex.oracle.com/pls/apex/f?p=246678%3A1%3A113534112105566%3A%3A%3A%3A%3A,555,0,0
+1743139039526,1253,Hotels Report (page 4),200,OK,User Group 1-1,text,true,,1095219,32096,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=113534112105566,766,0,0
+1743139039526,766,Hotels Report (page 4)-0,200,OK,User Group 1-1,text,true,,16203,639,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=113534112105566,766,0,0
+1743139040295,130,Hotels Report (page 4)-1,200,OK,User Group 1-1,text,true,,106413,1451,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oraclejet/17.0.2/css/libs/oj/17.0.2/redwood/oj-redwood-notag-min.css?v=24.2.2,73,0,0
+1743139040295,80,Hotels Report (page 4)-2,200,OK,User Group 1-1,text,true,,67376,1396,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Core.min.css?v=24.2.2,65,0,0
+1743139040295,64,Hotels Report (page 4)-3,200,OK,User Group 1-1,text,true,,6180,1406,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Theme-Standard.min.css?v=24.2.2,64,0,0
+1743139040295,78,Hotels Report (page 4)-4,200,OK,User Group 1-1,text,true,,14568,1418,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/font-apex/2.4/css/font-apex.min.css?v=24.2.2,78,0,0
+1743139040295,82,Hotels Report (page 4)-5,200,OK,User Group 1-1,text,true,,75676,1410,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Core.min.css?v=24.2.2,66,0,0
+1743139040295,64,Hotels Report (page 4)-6,200,OK,User Group 1-1,text,true,,1979,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oracle-fonts/oraclesans-apex.min.css?v=24.2.2,64,0,0
+1743139040359,179,Hotels Report (page 4)-7,200,OK,User Group 1-1,text,true,,28305,1413,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood.min.css?v=24.2.2,176,0,109
+1743139040359,59,Hotels Report (page 4)-8,200,OK,User Group 1-1,text,true,,1576,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood-Theme.min.css?v=24.2.2,59,0,0
+1743139040374,62,Hotels Report (page 4)-9,200,OK,User Group 1-1,text,true,,10430,1361,1,1,https://apex.oracle.com/akam/13/7b49f87,62,0,0
+1743139040376,162,Hotels Report (page 4)-10,200,OK,User Group 1-1,text,true,,216174,1415,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/desktop_all.min.js?v=24.2.2,64,0,0
+1743139040378,401,Hotels Report (page 4)-11,200,OK,User Group 1-1,text,true,,12919,1638,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_messages?p_app_id=246678&p_lang=en&p_version=24.2.2-15614581167317&p_nls_settings=eyJudW1lcmljQ2hhcmFjdGVycyI6Ii4sIiwiY3VycmVuY3kiOiIkIiwiaXNvQ3VycmVuY3kiOiJBTUVSSUNBIiwiZHVhbEN1cnJlbmN5IjoiJCJ9,401,0,0
+1743139040419,355,Hotels Report (page 4)-12,200,OK,User Group 1-1,text,true,,1245,1499,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_dialogs?p_app_id=246678&p_version=24.2.2-15614581167317,355,0,0
+1743139040428,63,Hotels Report (page 4)-13,200,OK,User Group 1-1,text,true,,9437,1411,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/js/theme42.min.js?v=24.2.2,63,0,0
+1743139040437,168,Hotels Report (page 4)-14,200,OK,User Group 1-1,text,true,,16313,1428,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.interactiveReport.min.js?v=24.2.2,168,0,105
+1743139040491,63,Hotels Report (page 4)-15,200,OK,User Group 1-1,text,true,,5955,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.iconList.min.js?v=24.2.2,63,0,0
+1743139040538,58,Hotels Report (page 4)-16,200,OK,User Group 1-1,text,true,,2781,1428,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyTableHeader.min.js?v=24.2.2,58,0,0
+1743139040539,60,Hotels Report (page 4)-17,200,OK,User Group 1-1,text,true,,3265,1423,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyWidget.min.js?v=24.2.2,60,0,0
+1743139040555,65,Hotels Report (page 4)-18,200,OK,User Group 1-1,text,true,,14782,1420,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/item.Colorpicker.min.js?v=24.2.2,64,0,0
+1743139040597,61,Hotels Report (page 4)-19,200,OK,User Group 1-1,text,true,,8078,1426,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oraclejet/17.0.2/js/libs/require/require.js?v=24.2.2,61,0,0
+1743139040599,61,Hotels Report (page 4)-20,200,OK,User Group 1-1,text,true,,2320,1423,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/requirejs.jetConfig.min.js?v=24.2.2,61,0,0
+1743139040606,117,Hotels Report (page 4)-21,200,OK,User Group 1-1,text,true,,113866,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/jetCommonBundle.min.js?v=24.2.2,63,0,0
+1743139040620,128,Hotels Report (page 4)-22,200,OK,User Group 1-1,text,true,,359378,1415,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/chartBundle.min.js?v=24.2.2,63,0,0
+1743139040782,620,Hotels Report Detail (page 5),200,OK,User Group 1-1,text,true,,7766,1615,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotel?p5_id_1=22&clear=RP&session=113534112105566&cs=3KxDQI81sFx0OTZekvcI4Rtq58ydkcMwbBdishDjnN8g2nJnYRUkZqVdiFSRUbffkVL88zkghgMpl4n2bF6vi3w&session=113534112105566,620,0,0
+1743139040782,620,Hotels Report Detail (page 5)-0,200,OK,User Group 1-1,text,true,,7766,1615,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotel?p5_id_1=22&clear=RP&session=113534112105566&cs=3KxDQI81sFx0OTZekvcI4Rtq58ydkcMwbBdishDjnN8g2nJnYRUkZqVdiFSRUbffkVL88zkghgMpl4n2bF6vi3w&session=113534112105566,620,0,0
+1743139041406,481,Update Action (page 6),200,OK,User Group 1-1,text,true,,463,4540,1,1,https://apex.oracle.com/pls/apex/wwv_flow.accept?p_context=hotels/hotel/113534112105566,481,0,0
+1743139044739,770,Hotels Report (page 4),200,OK,User Group 1-1,text,true,,16073,1787,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=113534112105566,770,0,0
+1743139044739,770,Hotels Report (page 4)-0,200,OK,User Group 1-1,text,true,,16073,1787,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=113534112105566,770,0,0
+1743139045515,1796,Login (page 101),200,OK,User Group 1-1,text,true,,449562,10577,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/login?session=16906492402335,382,0,0
+1743139045515,382,Login (page 101)-0,302,Moved Temporarily,User Group 1-1,text,true,,641,560,1,1,https://apex.oracle.com/pls/apex/f?p=246678:9999:113534112105566:,382,0,0
+1743139045897,381,Login (page 101)-1,302,Moved Temporarily,User Group 1-1,,true,,447,659,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/home?session=16906492402335,381,0,0
+1743139046278,554,Login (page 101)-2,200,OK,User Group 1-1,text,true,,4015,660,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/login?session=16906492402335,554,0,0
+1743139046833,80,Login (page 101)-3,200,OK,User Group 1-1,text,true,,66863,569,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Core.min.css?v=24.2.2,66,0,0
+1743139046833,72,Login (page 101)-4,200,OK,User Group 1-1,text,true,,5667,579,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Theme-Standard.min.css?v=24.2.2,72,0,0
+1743139046833,71,Login (page 101)-5,200,OK,User Group 1-1,text,true,,14055,591,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/font-apex/2.4/css/font-apex.min.css?v=24.2.2,71,0,0
+1743139046833,111,Login (page 101)-6,200,OK,User Group 1-1,text,true,,75163,583,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Core.min.css?v=24.2.2,63,0,0
+1743139046833,59,Login (page 101)-7,200,OK,User Group 1-1,text,true,,1466,592,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oracle-fonts/oraclesans-apex.min.css?v=24.2.2,59,0,0
+1743139046833,74,Login (page 101)-8,200,OK,User Group 1-1,text,true,,27792,586,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood.min.css?v=24.2.2,70,0,0
+1743139046892,63,Login (page 101)-9,200,OK,User Group 1-1,text,true,,1065,592,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood-Theme.min.css?v=24.2.2,63,0,0
+1743139046905,163,Login (page 101)-10,200,OK,User Group 1-1,bin,true,,877,669,1,1,https://apex.oracle.com/pls/apex/r/schavezca/246678/files/static/v6/icons/app-icon-32.png,163,0,106
+1743139046906,66,Login (page 101)-11,200,OK,User Group 1-1,bin,true,,10525,670,1,1,https://apex.oracle.com/pls/apex/r/schavezca/246678/files/static/v6/icons/app-icon-512.png,65,0,0
+1743139046908,128,Login (page 101)-12,200,OK,User Group 1-1,text,true,,215661,588,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/desktop_all.min.js?v=24.2.2,63,0,0
+1743139046914,398,Login (page 101)-13,200,OK,User Group 1-1,text,true,,12919,819,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_messages?p_app_id=246678&p_lang=en&p_version=24.2.2-15614581167317&p_nls_settings=eyJudW1lcmljQ2hhcmFjdGVycyI6Ii4sIiwiY3VycmVuY3kiOiIkIiwiaXNvQ3VycmVuY3kiOiJBTUVSSUNBIiwiZHVhbEN1cnJlbmN5IjoiJCJ9,398,0,0
+1743139046946,331,Login (page 101)-14,200,OK,User Group 1-1,text,true,,732,680,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_dialogs?p_app_id=246678&p_version=24.2.2-15614581167317,331,0,0
+1743139046957,60,Login (page 101)-15,200,OK,User Group 1-1,text,true,,2752,596,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyWidget.min.js?v=24.2.2,60,0,0
+1743139046972,60,Login (page 101)-16,200,OK,User Group 1-1,text,true,,8922,584,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/js/theme42.min.js?v=24.2.2,60,0,0
+1743139049252,561,Login action (page 101),200,OK,User Group 1-1,text,true,,576,1271,1,1,https://apex.oracle.com/pls/apex/wwv_flow.accept,561,0,0
+1743139051326,577,Home page (page 1),200,OK,User Group 1-1,text,true,,4585,659,1,1,https://apex.oracle.com/pls/apex/f?p=246678%3A1%3A16906492402335%3A%3A%3A%3A%3A,577,0,0
+1743139051326,577,Home page (page 1)-0,200,OK,User Group 1-1,text,true,,4585,659,1,1,https://apex.oracle.com/pls/apex/f?p=246678%3A1%3A16906492402335%3A%3A%3A%3A%3A,577,0,0
+1743139054802,1343,Hotels Report (page 4),200,OK,User Group 1-1,text,true,,1095206,32095,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=16906492402335,847,0,0
+1743139054802,847,Hotels Report (page 4)-0,200,OK,User Group 1-1,text,true,,16198,638,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=16906492402335,847,0,0
+1743139055650,102,Hotels Report (page 4)-1,200,OK,User Group 1-1,text,true,,106413,1451,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oraclejet/17.0.2/css/libs/oj/17.0.2/redwood/oj-redwood-notag-min.css?v=24.2.2,78,0,0
+1743139055650,78,Hotels Report (page 4)-2,200,OK,User Group 1-1,text,true,,67378,1396,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Core.min.css?v=24.2.2,65,0,0
+1743139055650,61,Hotels Report (page 4)-3,200,OK,User Group 1-1,text,true,,6178,1406,1,1,https://static.oracle.com/cdn/apex/24.2.2/app_ui/css/Theme-Standard.min.css?v=24.2.2,61,0,0
+1743139055650,65,Hotels Report (page 4)-4,200,OK,User Group 1-1,text,true,,14566,1418,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/font-apex/2.4/css/font-apex.min.css?v=24.2.2,64,0,0
+1743139055650,80,Hotels Report (page 4)-5,200,OK,User Group 1-1,text,true,,75676,1410,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Core.min.css?v=24.2.2,64,0,0
+1743139055650,61,Hotels Report (page 4)-6,200,OK,User Group 1-1,text,true,,1981,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oracle-fonts/oraclesans-apex.min.css?v=24.2.2,61,0,0
+1743139055711,65,Hotels Report (page 4)-7,200,OK,User Group 1-1,text,true,,28303,1413,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood.min.css?v=24.2.2,64,0,0
+1743139055712,179,Hotels Report (page 4)-8,200,OK,User Group 1-1,text,true,,1576,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/css/Redwood-Theme.min.css?v=24.2.2,179,0,114
+1743139055715,60,Hotels Report (page 4)-9,200,OK,User Group 1-1,text,true,,10430,1361,1,1,https://apex.oracle.com/akam/13/7b49f87,60,0,0
+1743139055729,88,Hotels Report (page 4)-10,200,OK,User Group 1-1,text,true,,216174,1415,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/desktop_all.min.js?v=24.2.2,61,0,0
+1743139055731,414,Hotels Report (page 4)-11,200,OK,User Group 1-1,text,true,,12919,1638,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_messages?p_app_id=246678&p_lang=en&p_version=24.2.2-15614581167317&p_nls_settings=eyJudW1lcmljQ2hhcmFjdGVycyI6Ii4sIiwiY3VycmVuY3kiOiIkIiwiaXNvQ3VycmVuY3kiOiJBTUVSSUNBIiwiZHVhbEN1cnJlbmN5IjoiJCJ9,414,0,0
+1743139055754,362,Hotels Report (page 4)-12,200,OK,User Group 1-1,text,true,,1245,1499,1,1,https://apex.oracle.com/pls/apex/wwv_flow.js_dialogs?p_app_id=246678&p_version=24.2.2-15614581167317,362,0,0
+1743139055776,61,Hotels Report (page 4)-13,200,OK,User Group 1-1,text,true,,9437,1411,1,1,https://static.oracle.com/cdn/apex/24.2.2/themes/theme_42/24.2/js/theme42.min.js?v=24.2.2,61,0,0
+1743139055777,61,Hotels Report (page 4)-14,200,OK,User Group 1-1,text,true,,16313,1428,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.interactiveReport.min.js?v=24.2.2,61,0,0
+1743139055817,59,Hotels Report (page 4)-15,200,OK,User Group 1-1,text,true,,5953,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.iconList.min.js?v=24.2.2,59,0,0
+1743139055837,61,Hotels Report (page 4)-16,200,OK,User Group 1-1,text,true,,2783,1428,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyTableHeader.min.js?v=24.2.2,61,0,0
+1743139055839,61,Hotels Report (page 4)-17,200,OK,User Group 1-1,text,true,,3263,1423,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/widget.stickyWidget.min.js?v=24.2.2,61,0,0
+1743139055877,60,Hotels Report (page 4)-18,200,OK,User Group 1-1,text,true,,14780,1420,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/item.Colorpicker.min.js?v=24.2.2,59,0,0
+1743139055892,65,Hotels Report (page 4)-19,200,OK,User Group 1-1,text,true,,8078,1426,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/oraclejet/17.0.2/js/libs/require/require.js?v=24.2.2,65,0,0
+1743139055898,67,Hotels Report (page 4)-20,200,OK,User Group 1-1,text,true,,2320,1423,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/requirejs.jetConfig.min.js?v=24.2.2,67,0,0
+1743139055900,78,Hotels Report (page 4)-21,200,OK,User Group 1-1,text,true,,113866,1419,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/jetCommonBundle.min.js?v=24.2.2,65,0,0
+1743139055937,103,Hotels Report (page 4)-22,200,OK,User Group 1-1,text,true,,359376,1415,1,1,https://static.oracle.com/cdn/apex/24.2.2/libraries/apex/minified/chartBundle.min.js?v=24.2.2,60,0,0
+1743139056149,634,Hotels Report Detail (page 5),200,OK,User Group 1-1,text,true,,7763,1613,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotel?p5_id_1=22&clear=RP&session=16906492402335&cs=3BtnxxW1hTLKnyT_cKHT2qz5incKwu4eEB3i9y7ibvcd9yTQxEhqIOTZa0E0zGFemRG3SEp7bk7yjSnqSeUv9cA&session=16906492402335,634,0,0
+1743139056149,634,Hotels Report Detail (page 5)-0,200,OK,User Group 1-1,text,true,,7763,1613,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotel?p5_id_1=22&clear=RP&session=16906492402335&cs=3BtnxxW1hTLKnyT_cKHT2qz5incKwu4eEB3i9y7ibvcd9yTQxEhqIOTZa0E0zGFemRG3SEp7bk7yjSnqSeUv9cA&session=16906492402335,634,0,0
+1743139056786,505,Update Action (page 6),200,OK,User Group 1-1,text,true,,463,4536,1,1,https://apex.oracle.com/pls/apex/wwv_flow.accept?p_context=hotels/hotel/16906492402335,505,0,0
+1743139058377,744,Hotels Report (page 4),200,OK,User Group 1-1,text,true,,16066,1786,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=16906492402335,744,0,0
+1743139058377,744,Hotels Report (page 4)-0,200,OK,User Group 1-1,text,true,,16066,1786,1,1,https://apex.oracle.com/pls/apex/r/schavezca/hotels/hotels-report?session=16906492402335,744,0,0

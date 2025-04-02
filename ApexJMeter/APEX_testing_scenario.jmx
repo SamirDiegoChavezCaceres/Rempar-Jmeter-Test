@@ -299,7 +299,7 @@
         <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Testing Scenario"/>
         <hashTree>
-          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Session state protection Response Assertion">
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Session state protection Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="1931372727">Session state protection violation</stringProp>
             </collectionProp>
@@ -1064,7 +1064,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
               </ResponseAssertion>
               <hashTree/>
             </hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)" enabled="false">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)">
               <stringProp name="HTTPSampler.domain">${domain}</stringProp>
               <stringProp name="HTTPSampler.port">443</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>

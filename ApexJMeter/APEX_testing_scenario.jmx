@@ -226,7 +226,7 @@
         <stringProp name="variableNames">P1010_RECEIVER_USER_ID,P1010_CONTENT,P1010_RECOGNITION_CATEGORY_ID,P1010_RECOGNITION_SUBCATEGORY_ID,P1010_AWARD_ID,P1010_EXISTS_BLOB_IMAGE_YN,P1010_POST_HAS_DZ_IMAGES_Y,P1010_GIF_URL,P1010_REWARD_AMOUNT</stringProp>
         <boolProp name="ignoreFirstLine">true</boolProp>
         <stringProp name="delimiter">|</stringProp>
-        <boolProp name="quotedData">false</boolProp>
+        <boolProp name="quotedData">true</boolProp>
         <boolProp name="recycle">true</boolProp>
         <boolProp name="stopThread">false</boolProp>
         <stringProp name="shareMode">shareMode.all</stringProp>
@@ -255,13 +255,13 @@
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
           <boolProp name="clearEachIteration">true</boolProp>
           <boolProp name="useExpires">true</boolProp>
           <boolProp name="CacheManager.controlledByThread">false</boolProp>
         </CacheManager>
         <hashTree/>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
           <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
@@ -321,7 +321,7 @@
           <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
         </HtmlExtractor>
         <hashTree/>
-        <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pSalt CSS Selector Extractor" enabled="true">
+        <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pSalt CSS Selector Extractor">
           <stringProp name="HtmlExtractor.refname">pSalt</stringProp>
           <stringProp name="HtmlExtractor.expr">#pSalt</stringProp>
           <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -556,7 +556,7 @@
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">3</stringProp>
+            <intProp name="LoopController.loops">-1</intProp>
           </LoopController>
           <hashTree>
             <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)">
@@ -3605,7 +3605,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </hashTree>
               </hashTree>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">true</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>

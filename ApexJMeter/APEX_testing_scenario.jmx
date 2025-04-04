@@ -208,7 +208,7 @@
         </collectionProp>
       </Arguments>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Users CSV Data Set Config">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="Users CSV Data Set Config" enabled="true">
         <stringProp name="delimiter">,</stringProp>
         <stringProp name="fileEncoding"></stringProp>
         <stringProp name="filename">C:/Users/Usuario/Documents/JMeterTestPlan/Traust-APEX-Jmeter-Test/ApexJMeter/samir_users.csv</stringProp>
@@ -220,7 +220,7 @@
         <stringProp name="variableNames">application_login,application_password,user_type</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Post Data Set Config">
+      <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Post Data Set Config" enabled="true">
         <stringProp name="filename">C:/Users/Usuario/Documents/JMeterTestPlan/Traust-APEX-Jmeter-Test/ApexJMeter/samir_post.csv</stringProp>
         <stringProp name="fileEncoding">UTF-8</stringProp>
         <stringProp name="variableNames">P1010_RECEIVER_USER_ID,P1010_CONTENT,P1010_RECOGNITION_CATEGORY_ID,P1010_RECOGNITION_SUBCATEGORY_ID,P1010_AWARD_ID,P1010_EXISTS_BLOB_IMAGE_YN,P1010_POST_HAS_DZ_IMAGES_Y,P1010_GIF_URL,P1010_REWARD_AMOUNT</stringProp>
@@ -232,7 +232,7 @@
         <stringProp name="shareMode">shareMode.all</stringProp>
       </CSVDataSet>
       <hashTree/>
-      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="jp@gc - REMPAR Stepping Thread Group">
+      <kg.apc.jmeter.threads.SteppingThreadGroup guiclass="kg.apc.jmeter.threads.SteppingThreadGroupGui" testclass="kg.apc.jmeter.threads.SteppingThreadGroup" testname="jp@gc - REMPAR Stepping Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <stringProp name="ThreadGroup.num_threads">50</stringProp>
         <stringProp name="Threads initial delay">0</stringProp>
@@ -255,13 +255,13 @@
           <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
         </CookieManager>
         <hashTree/>
-        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager">
+        <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
           <boolProp name="clearEachIteration">true</boolProp>
           <boolProp name="useExpires">true</boolProp>
           <boolProp name="CacheManager.controlledByThread">false</boolProp>
         </CacheManager>
         <hashTree/>
-        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+        <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
           <boolProp name="HTTPSampler.image_parser">true</boolProp>
           <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
           <intProp name="HTTPSampler.concurrentPool">6</intProp>
@@ -321,7 +321,7 @@
           <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
         </HtmlExtractor>
         <hashTree/>
-        <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pSalt CSS Selector Extractor">
+        <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pSalt CSS Selector Extractor" enabled="true">
           <stringProp name="HtmlExtractor.refname">pSalt</stringProp>
           <stringProp name="HtmlExtractor.expr">#pSalt</stringProp>
           <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -331,7 +331,7 @@
           <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
         </HtmlExtractor>
         <hashTree/>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Testing Scenario"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Testing Scenario" enabled="true"/>
         <hashTree>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Session state protection Response Assertion" enabled="false">
             <collectionProp name="Asserion.test_strings">
@@ -343,7 +343,7 @@
             <intProp name="Assertion.test_type">20</intProp>
           </ResponseAssertion>
           <hashTree/>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)" enabled="true">
             <stringProp name="HTTPSampler.domain">${domain}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -442,7 +442,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)" enabled="true">
             <stringProp name="HTTPSampler.domain">${domain}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -554,12 +554,12 @@
             </UniformRandomTimer>
             <hashTree/>
           </hashTree>
-          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
+          <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
             <intProp name="LoopController.loops">-1</intProp>
           </LoopController>
           <hashTree>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)" enabled="true">
               <stringProp name="HTTPSampler.domain">${domain}</stringProp>
               <stringProp name="HTTPSampler.port">${port}</stringProp>
               <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -582,7 +582,7 @@
               </elementProp>
             </HTTPSamplerProxy>
             <hashTree>
-              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+              <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                 <collectionProp name="HeaderManager.headers">
                   <elementProp name="Referer" elementType="Header">
                     <stringProp name="Header.name">Referer</stringProp>
@@ -630,7 +630,7 @@
                 <intProp name="Assertion.test_type">16</intProp>
               </ResponseAssertion>
               <hashTree/>
-              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="redirect_url Regular Expression Extractor">
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="redirect_url Regular Expression Extractor" enabled="true">
                 <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                 <stringProp name="RegexExtractor.refname">redirected_url</stringProp>
                 <stringProp name="RegexExtractor.regex">apex\.navigation\.redirect\(&apos;([^&apos;]+)&apos;\); </stringProp>
@@ -641,7 +641,7 @@
                 <stringProp name="Sample.scope">all</stringProp>
               </RegexExtractor>
               <hashTree/>
-              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor">
+              <JSR223PostProcessor guiclass="TestBeanGUI" testclass="JSR223PostProcessor" testname="JSR223 PostProcessor" enabled="true">
                 <stringProp name="cacheKey">true</stringProp>
                 <stringProp name="filename"></stringProp>
                 <stringProp name="parameters"></stringProp>
@@ -666,19 +666,19 @@ if (encodedUrl.equals(&quot;0&quot;)) {
               </JSR223PostProcessor>
               <hashTree/>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users with recognizement points feature">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users with recognizement points feature" enabled="true">
               <stringProp name="IfController.condition">${__jexl3(&quot;${user_type}&quot; == 0)}</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">true</boolProp>
             </IfController>
             <hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; == &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -777,7 +777,7 @@ if (encodedUrl.equals(&quot;0&quot;)) {
                   </ResponseAssertion>
                   <hashTree/>
                 </hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -890,13 +890,13 @@ if (encodedUrl.equals(&quot;0&quot;)) {
                   <hashTree/>
                 </hashTree>
               </hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; != &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1023,7 +1023,7 @@ if (encodedUrl.equals(&quot;0&quot;)) {
                     <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                   </HtmlExtractor>
                   <hashTree/>
-                  <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pContext CSS Selector Extractor">
+                  <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="pContext CSS Selector Extractor" enabled="true">
                     <stringProp name="HtmlExtractor.refname">pContext</stringProp>
                     <stringProp name="HtmlExtractor.expr">#pContext</stringProp>
                     <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1333,7 +1333,7 @@ if (encodedUrl.equals(&quot;0&quot;)) {
                     <intProp name="Assertion.test_type">16</intProp>
                   </ResponseAssertion>
                   <hashTree/>
-                  <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+                  <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
                     <stringProp name="cacheKey">true</stringProp>
                     <stringProp name="filename"></stringProp>
                     <stringProp name="parameters"></stringProp>
@@ -1651,19 +1651,19 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </hashTree>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature" enabled="true">
               <stringProp name="IfController.condition">${__jexl3(&quot;${user_type}&quot; == 1)}</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">true</boolProp>
             </IfController>
             <hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; == &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1762,7 +1762,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </ResponseAssertion>
                   <hashTree/>
                 </hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1875,13 +1875,13 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <hashTree/>
                 </hashTree>
               </hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; != &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2330,7 +2330,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </JSR223PreProcessor>
                   <hashTree/>
                 </hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">443</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2638,13 +2638,13 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
               <boolProp name="IfController.useExpression">true</boolProp>
             </IfController>
             <hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller if user need log in" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; == &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2743,7 +2743,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </ResponseAssertion>
                   <hashTree/>
                 </hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2856,13 +2856,13 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <hashTree/>
                 </hashTree>
               </hashTree>
-              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow">
+              <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller to normal flow" enabled="true">
                 <stringProp name="IfController.condition">${__jexl3(&quot;${decoded_redirect_url}&quot; != &quot;0&quot;)}</stringProp>
                 <boolProp name="IfController.evaluateAll">false</boolProp>
                 <boolProp name="IfController.useExpression">true</boolProp>
               </IfController>
               <hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">${port}</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3311,7 +3311,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </JSR223PreProcessor>
                   <hashTree/>
                 </hashTree>
-                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)">
+                <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)" enabled="true">
                   <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                   <stringProp name="HTTPSampler.port">443</stringProp>
                   <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3605,7 +3605,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </hashTree>
               </hashTree>
             </hashTree>
-            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler">
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
               <boolProp name="displayJMeterProperties">false</boolProp>
               <boolProp name="displayJMeterVariables">true</boolProp>
               <boolProp name="displaySystemProperties">false</boolProp>
@@ -3707,7 +3707,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
         </HtmlExtractor>
         <hashTree/>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3742,7 +3742,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph">
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3780,7 +3780,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="ResultCollector.success_only_logging">true</boolProp>
         </ResultCollector>
         <hashTree/>
-        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.HitsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Hits per Second">
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.HitsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Hits per Second" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3825,7 +3825,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="exclude_checkbox_state">false</boolProp>
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
-        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseCodesPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Codes per Second">
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseCodesPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Codes per Second" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3870,7 +3870,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="exclude_checkbox_state">false</boolProp>
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results">
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3908,7 +3908,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list">
           <stringProp name="-2063843150">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2)</stringProp>

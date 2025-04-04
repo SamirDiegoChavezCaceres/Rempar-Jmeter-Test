@@ -271,16 +271,6 @@
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_page_submission_id Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">p_page_submission_id</stringProp>
-          <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;p_page_submission_id&quot; value=&quot;(.+?)&quot; id=&quot;pPageSubmissionId&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
         <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_request Regular Expression Extractor" enabled="true">
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">p_request</stringProp>
@@ -305,26 +295,6 @@
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">p_arg_values</stringProp>
           <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;p_arg_values&quot; value=&quot;(.+?)&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="pSalt Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">pSalt</stringProp>
-          <stringProp name="RegexExtractor.regex">&lt;input value=&quot;(.+?)&quot; id=&quot;pSalt&quot; type=&quot;hidden&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="pPageItemsProtected Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">pPageItemsProtected</stringProp>
-          <stringProp name="RegexExtractor.regex">id=&quot;pPageItemsProtected&quot; value=&quot;(.+?)&quot;</stringProp>
           <stringProp name="RegexExtractor.template">$1$</stringProp>
           <stringProp name="RegexExtractor.default"></stringProp>
           <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -472,7 +442,7 @@
             </ResponseAssertion>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Login action (page 9999)" enabled="true">
             <stringProp name="HTTPSampler.domain">${domain}</stringProp>
             <stringProp name="HTTPSampler.port">${port}</stringProp>
             <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -586,10 +556,10 @@
           </hashTree>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${LOOP}</stringProp>
+            <intProp name="LoopController.loops">-1</intProp>
           </LoopController>
           <hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users with recognizement points feature">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users with recognizement points feature" enabled="true">
               <stringProp name="IfController.condition">${__jexl3(&quot;${user_type}&quot; == 0)}</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">true</boolProp>
@@ -696,7 +666,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                 </JSR223PostProcessor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Edition (page 1010)" enabled="true">
                 <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -719,7 +689,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
                       <stringProp name="Header.name">Referer</stringProp>
@@ -1073,7 +1043,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_value</stringProp>
                   <stringProp name="HtmlExtractor.expr">input#P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1083,7 +1053,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_GIVER_USER_ID&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1103,7 +1073,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_CONTENT_LABEL_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_CONTENT_LABEL&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1133,7 +1103,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <intProp name="Assertion.test_type">16</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
                   <stringProp name="cacheKey">true</stringProp>
                   <stringProp name="filename"></stringProp>
                   <stringProp name="parameters"></stringProp>
@@ -1339,7 +1309,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Sec-Fetch-Mode" elementType="Header">
                       <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -1388,7 +1358,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_REWARD_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_REWARD_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1398,7 +1368,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIFT_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIFT_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1408,7 +1378,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_TENANT_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_TENANT_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1418,7 +1388,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_MANAGER_POINTS</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_MANAGER_POINTS&quot;,&quot;v&quot;:&quot;(\\d+)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1428,7 +1398,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_FROM_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_FROM_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1438,7 +1408,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIVER_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -1450,13 +1420,13 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature" enabled="true">
               <stringProp name="IfController.condition">${__jexl3(&quot;${user_type}&quot; == 1)}</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">true</boolProp>
             </IfController>
             <hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)" enabled="true">
                 <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -1580,7 +1550,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
                       <stringProp name="Header.name">Referer</stringProp>
@@ -1934,7 +1904,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_value</stringProp>
                   <stringProp name="HtmlExtractor.expr">input#P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1944,7 +1914,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_GIVER_USER_ID&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1964,7 +1934,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_CONTENT_LABEL_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_CONTENT_LABEL&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -1994,7 +1964,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <intProp name="Assertion.test_type">16</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
                   <stringProp name="cacheKey">true</stringProp>
                   <stringProp name="filename"></stringProp>
                   <stringProp name="parameters"></stringProp>
@@ -2006,7 +1976,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </JSR223PreProcessor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)" enabled="true">
                 <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                 <stringProp name="HTTPSampler.port">443</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2196,7 +2166,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Sec-Fetch-Mode" elementType="Header">
                       <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -2245,7 +2215,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_REWARD_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_REWARD_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2255,7 +2225,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIFT_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIFT_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2265,7 +2235,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_TENANT_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_TENANT_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2275,7 +2245,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_MANAGER_POINTS</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_MANAGER_POINTS&quot;,&quot;v&quot;:&quot;(\\d+)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2285,7 +2255,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_FROM_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_FROM_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2295,7 +2265,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIVER_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -2307,13 +2277,13 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 <hashTree/>
               </hashTree>
             </hashTree>
-            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature">
+            <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If Controller users without recognizement points feature" enabled="true">
               <stringProp name="IfController.condition">${__jexl3(&quot;${user_type}&quot; == 2)}</stringProp>
               <boolProp name="IfController.evaluateAll">false</boolProp>
               <boolProp name="IfController.useExpression">true</boolProp>
             </IfController>
             <hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Home page (page 1000)" enabled="true">
                 <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                 <stringProp name="HTTPSampler.port">${port}</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -2437,7 +2407,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Referer" elementType="Header">
                       <stringProp name="Header.name">Referer</stringProp>
@@ -2791,7 +2761,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID value CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_value</stringProp>
                   <stringProp name="HtmlExtractor.expr">input#P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -2801,7 +2771,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_GIVER_USER_ID ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_GIVER_USER_ID_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_GIVER_USER_ID&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -2821,7 +2791,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <stringProp name="HtmlExtractor.extractor_impl"></stringProp>
                 </HtmlExtractor>
                 <hashTree/>
-                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor">
+                <HtmlExtractor guiclass="HtmlExtractorGui" testclass="HtmlExtractor" testname="P1010_CONTENT_LABEL ck CSS Selector Extractor" enabled="true">
                   <stringProp name="HtmlExtractor.refname">P1010_CONTENT_LABEL_ck</stringProp>
                   <stringProp name="HtmlExtractor.expr">input[data-for=&quot;P1010_CONTENT_LABEL&quot;]</stringProp>
                   <stringProp name="HtmlExtractor.attribute">value</stringProp>
@@ -2851,7 +2821,7 @@ vars.put(&quot;decoded_redirect_url&quot;, decodedUrl);
                   <intProp name="Assertion.test_type">16</intProp>
                 </ResponseAssertion>
                 <hashTree/>
-                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor">
+                <JSR223PreProcessor guiclass="TestBeanGUI" testclass="JSR223PreProcessor" testname="JSR223 PreProcessor" enabled="true">
                   <stringProp name="cacheKey">true</stringProp>
                   <stringProp name="filename"></stringProp>
                   <stringProp name="parameters"></stringProp>
@@ -2863,7 +2833,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </JSR223PreProcessor>
                 <hashTree/>
               </hashTree>
-              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)">
+              <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Post Submit Action (page 1010)" enabled="true">
                 <stringProp name="HTTPSampler.domain">${domain}</stringProp>
                 <stringProp name="HTTPSampler.port">443</stringProp>
                 <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
@@ -3045,7 +3015,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                 </elementProp>
               </HTTPSamplerProxy>
               <hashTree>
-                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager">
+                <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="Sec-Fetch-Mode" elementType="Header">
                       <stringProp name="Header.name">Sec-Fetch-Mode</stringProp>
@@ -3094,7 +3064,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   </collectionProp>
                 </HeaderManager>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_REWARD_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_REWARD_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_REWARD_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3104,7 +3074,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIFT_YN_ck Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIFT_YN_ck</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIFT_YN&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3114,7 +3084,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_TENANT_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_TENANT_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_TENANT_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3124,7 +3094,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_MANAGER_POINTS Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_MANAGER_POINTS</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_MANAGER_POINTS&quot;,&quot;v&quot;:&quot;(\\d+)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3134,7 +3104,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_FROM_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_FROM_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_FROM_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3144,7 +3114,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
                   <stringProp name="RegexExtractor.match_number">1</stringProp>
                 </RegexExtractor>
                 <hashTree/>
-                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor">
+                <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="P1010_GIVER_USER_ID Regular Expression Extractor" enabled="true">
                   <stringProp name="RegexExtractor.useHeaders">false</stringProp>
                   <stringProp name="RegexExtractor.refname">P1010_GIVER_USER_ID</stringProp>
                   <stringProp name="RegexExtractor.regex">&quot;n&quot;:&quot;P1010_GIVER_USER_ID&quot;,&quot;v&quot;:&quot;(.*?)&quot;,&quot;ck&quot;:&quot;(.*?)&quot;</stringProp>
@@ -3165,7 +3135,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           </hashTree>
         </hashTree>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ExperimentUser Group">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="ExperimentUser Group" enabled="false">
         <stringProp name="ThreadGroup.num_threads">${THREADS}</stringProp>
         <stringProp name="ThreadGroup.ramp_time">${RAMPUP}</stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -3198,16 +3168,6 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="HTTPSampler.implementation"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_page_submission_id Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">p_page_submission_id</stringProp>
-          <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;p_page_submission_id&quot; value=&quot;(.+?)&quot; id=&quot;pPageSubmissionId&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
         <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_request Regular Expression Extractor" enabled="true">
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">p_request</stringProp>
@@ -3218,7 +3178,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
         </RegexExtractor>
         <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_md5_checksum Regular Expression Extractor">
+        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="p_md5_checksum Regular Expression Extractor" enabled="true">
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">p_md5_checksum</stringProp>
           <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;p_md5_checksum&quot; value=&quot;&quot;  /&gt;</stringProp>
@@ -3232,26 +3192,6 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="RegexExtractor.useHeaders">false</stringProp>
           <stringProp name="RegexExtractor.refname">p_arg_values</stringProp>
           <stringProp name="RegexExtractor.regex">&lt;input type=&quot;hidden&quot; name=&quot;p_arg_values&quot; value=&quot;(.+?)&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="pSalt Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">pSalt</stringProp>
-          <stringProp name="RegexExtractor.regex">&lt;input value=&quot;(.+?)&quot; id=&quot;pSalt&quot; type=&quot;hidden&quot; /&gt;</stringProp>
-          <stringProp name="RegexExtractor.template">$1$</stringProp>
-          <stringProp name="RegexExtractor.default"></stringProp>
-          <stringProp name="RegexExtractor.match_number">1</stringProp>
-          <boolProp name="RegexExtractor.default_empty_value">false</boolProp>
-        </RegexExtractor>
-        <hashTree/>
-        <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="pPageItemsProtected Regular Expression Extractor" enabled="false">
-          <stringProp name="RegexExtractor.useHeaders">false</stringProp>
-          <stringProp name="RegexExtractor.refname">pPageItemsProtected</stringProp>
-          <stringProp name="RegexExtractor.regex">id=&quot;pPageItemsProtected&quot; value=&quot;(.+?)&quot;</stringProp>
           <stringProp name="RegexExtractor.template">$1$</stringProp>
           <stringProp name="RegexExtractor.default"></stringProp>
           <stringProp name="RegexExtractor.match_number">1</stringProp>
@@ -3323,7 +3263,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph">
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3360,7 +3300,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
-        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.HitsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Hits per Second">
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.HitsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Hits per Second" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3405,7 +3345,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="exclude_checkbox_state">false</boolProp>
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
-        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseCodesPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Codes per Second">
+        <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseCodesPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Codes per Second" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3450,7 +3390,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
           <boolProp name="exclude_checkbox_state">false</boolProp>
         </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
         <hashTree/>
-        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results">
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -3488,7 +3428,7 @@ vars.put(&quot;fixedIds&quot;, fixedIds)
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">
+      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">
         <stringProp name="ProxyControlGui.port">8888</stringProp>
         <collectionProp name="ProxyControlGui.exclude_list">
           <stringProp name="-2063843150">(?i).*\.(bmp|css|js|gif|ico|jpe?g|png|swf|woff|woff2)</stringProp>
